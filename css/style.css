@@ -62,10 +62,10 @@ span{
   font-family: 'Gorditas', cursive;
   font-family: 'Indie Flower', cursive;
   color: rgb(211, 26, 112);
-  margin: 100px 10px 20px 0;
+  margin: 120px 10px 20px 0;
 }
 .shin{
-  font-size: 30px;
+  font-size: 20px;
   color: rgb(112, 108, 108);
   font-weight: bold;
   margin-bottom: 30px;
@@ -104,7 +104,7 @@ span{
   width: 100%;
   height: 450px;
   padding-top: 30px;
-  background-color: rgb(238, 229, 229);
+  background-color: rgb(231, 231, 231);
   margin-top: 70px;
   display: block;
 }
@@ -136,68 +136,275 @@ span{
   margin-left: 170px;
 }
 
+.grid{
+  display: grid;
+  grid-template-rows: 100px 100px 200px 200px 100px 50px ;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
+}
 .servise{
   font-family: 'Gorditas', cursive;
   font-family: 'Indie Flower', cursive;
   color: rgb(211, 26, 112);
-  margin-top: 70px;
-  margin-left: 170px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 90px;
 }
 .servise_ttl{
   font-weight: bold;
   color: rgb(102, 108, 108);
   font-size: 20px;
-  margin-top: 15px;
-  margin-left: 170px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 20px;
 }
 .servise_box1{
-  width: 450px;
-  height: 300px;
   background-color: rgb(211, 26, 112);
-  margin-top: 70px;
-  margin-left: 170px;
-  margin-bottom: 0;
+  grid-column: 2/4;
+  grid-row: 3/5;
 }
 .servise_img1{
-  display: flex;
-  width: 100px;
-  height: 100px;
-  margin-top: 10px;
-  margin-left: 180px;
-}
-.img_ttl1{
-  color: #fff;
-  margin-top: 30px;
-  margin-left: 190px;
-}
-.img_coment1{
-  color: #fff;
-  margin-top: 30px;
-  margin-left: 40px;
-}
-.servise_box2{
-  justify-content: flex-end;
-  width: 450px;
-  height: 150px;
-  background-color: rgb(182, 117, 147);
-  margin-left: 620px;
-  margin-bottom: 0;
-}
-.servise_img2{
   width: 100px;
   height: 100px;
   margin-top: 20px;
+  margin-left: 150px
+}
+.img_ttl1{
+  color: #fff;
+  margin-top: 40px;
+  margin-left: 150px;
+  font-size: 25px;
+}
+.img_coment1{
+  margin-top: 50px;
   margin-left: 20px;
-  margin-right: 0;
-  padding: 0 0 0 0;
+  font-size: 15px;
+  color: #fff;
+}
+.servise_box2{
+  background-color: rgb(177, 80, 125);
+  grid-column: 4/6;
+  grid-row: 3/4;
+}
+.servise_img2{
+  grid-column: 4/6;
+  grid-row: 3/4;
+  width: 100px;
+  height: 100px;
+  margin-top: 40px;
+  margin-left: 30px;
 }
 .img_ttl2{
+  grid-column: 6/7;
+  grid-row: 3/4;
+  font-size: 15px;
+  background-color: rgb(177, 80, 125);
+  font-size: 25px;
+  padding-top: 20px;
   color: #fff;
-  margin-top: 5px;
-  margin-left: 150px;
 }
 .img_coment2{
+  grid-column: 6/7;
+  grid-row: 3/4;
+  font-size: 15px;
+  margin-top: 60px;
   color: #fff;
-  margin-top: 10px;
-  margin-left: 150px;
+}
+.servise_box3{
+  background-color: rgb(182, 117, 147);
+  grid-column: 4/6;
+  grid-row: 4/5;
+}
+.servise_img3{
+  grid-column: 4/6;
+  grid-row: 4/5;
+  width: 100px;
+  height: 100px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.img_ttl3{
+  grid-column: 6/7;
+  grid-row: 4/5;
+  font-size: 15px;
+  background-color: rgb(182, 117, 147);
+  font-size: 25px;
+  padding-top: 20px;
+  color: #fff;
+}
+.img_coment3{
+  grid-column: 6/7;
+  grid-row: 4/5;
+  font-size: 15px;
+  margin-top: 60px;
+  color: #fff;
+}
+
+.blog{
+  font-family: 'Gorditas', cursive;
+  font-family: 'Indie Flower', cursive;
+  color: rgb(211, 26, 112);
+  margin-bottom: 20px;
+  margin-left: 200px;
+}
+.blog_ttl{
+  font-size: 20px;
+  color: rgb(112, 108, 108);
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-left: 200px;
+}
+.blog_card{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.card {
+  width: 30%;
+  cursor: pointer;
+  border: 1px solid #e9eaea;
+  border-radius: 5px;
+}
+.text-box {
+  padding: 20px;
+  color: rgb(112, 108, 108);
+}
+.card_img {
+  padding: 0px 0;
+  text-align: center;
+  background: #e1f3ff;
+}
+.date{
+  font-size: 15px;
+  margin-top: 20px;
+}
+.ichiran_btn{
+  border: 1px solid rgb(211, 26, 112);
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  color: rgb(211, 26, 112);
+  width: 150px;
+  margin: 50px auto;
+}
+
+.company{
+  font-family: 'Gorditas', cursive;
+  font-family: 'Indie Flower', cursive;
+  color: rgb(211, 26, 112);
+  margin-bottom: 20px;
+  margin-left: 200px;
+}
+.com_ttl{
+  font-size: 20px;
+  color: rgb(112, 108, 108);
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: 200px;
+}
+
+
+table {
+  width: 60%;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 20px;
+  color: rgb(112, 108, 108);
+}
+table th {
+  font-weight: bold;
+  background-color: #dedede;
+  color: rgb(112, 108, 108);
+}
+
+.img1{
+  position: relative;
+  background: url(../img/recruit.png) no-repeat center/cover;;
+  height: 50vh;
+  width: 50vw;
+  float: left;
+}
+.saiyou{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 30px;
+}
+.img2{
+  position: relative;
+  background: url(../img/interview.png) no-repeat center/cover;
+  height: 50vh;
+  width: 50vw;
+  float: right;
+}
+.interview{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 30px;
+}
+
+.toiawase{
+  margin-top: 500px;
+  margin-left: 450px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  color: rgb(112, 108, 108);
+}
+
+.line{
+  margin-left: 50%;
+  width: 2px;
+  height: 50px;
+  background-color: rgb(211, 26, 112);
+}
+
+.toiawase_btn{
+  position: relative;
+  border: 1px solid rgb(211, 26, 112);
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ff006a, #8b00be);
+  box-shadow: 0px 5px 0px rgb(170, 2, 128);
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  width: 200px;
+  margin: 50px auto 0;
+  display: block;
+  font-size: 15px;
+  bottom: 5px;
+}
+.toiawase_btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  background: url(../img/mailicon.svg) no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  transform: translate(0, -50%);
+}
+
+footer {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgb(230, 230, 230);
+  margin-top: 70px;
+  color: rgb(139, 138, 138);
 }
